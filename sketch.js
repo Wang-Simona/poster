@@ -23,7 +23,7 @@ function setup() {
   mic.start();
   rectMode(CENTER);
   angleMode(DEGREES);
-  frameRate(11);
+  frameRate(10);
 }
 
 function draw() {
