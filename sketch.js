@@ -33,18 +33,18 @@ function draw() {
   // R - cerchio
   push();
   translate(width / 2, height / 2.5);
-  rotate(frameCount * 6);
+  rotate(frameCount*6);
   noStroke();
   fill(250)
-  ellipse(130,130,50,50)
+  ellipse(width/3,height/7,width/10,width/10)
+  ellipse(width/4,height/8, width/14);
   if (mouseIsPressed) {
     fill(230,68,72,80);
   } else {
     fill(51,51,204,80);
   }
-  ellipse(130, 130, 50, 50);
-  ellipse(130,130,40,40);
-  ellipse(130,130,20,20);
+  ellipse(width/3,height/7,width/10,width/10)
+  ellipse(width/4,height/8, width/14);
   pop();
 
  // 红色背景图
@@ -66,9 +66,9 @@ function draw() {
   // 主题
   // text tema
   let text_x = width/2;
-  let text_y = height / 2+50;
+  let text_y = height /1.7;
   let testo = "LIMES"
-  let font_size = 130
+  let font_size = width/5
   let risoluzione = 0.2
 
   textSize(font_size);
@@ -76,16 +76,20 @@ function draw() {
   textFont(font1);
   fill("white");
   noStroke();
- // text(testo, text_x, text_y);
+  //text(testo, text_x, text_y);
+
+  let text_width = textWidth(testo)
   
   let points = font1.textToPoints(
     testo,
-    text_x-190,
-    text_y-5,
+    text_x,
+    text_y,
     font_size,
     {sampleFactor:risoluzione}
   );
 
+  push()
+  translate(-text_width/2, 0)
   strokeWeight(8)
   stroke(250)
   noFill()
@@ -97,6 +101,7 @@ function draw() {
     pop()
   }
   endShape();
+  pop()
 
 
   // 信息
@@ -137,35 +142,35 @@ function draw() {
   let y = height;
   
   push();
-  translate(x + 100, height - 100);
+  translate(width/5, height-height/6);
   rotate(-frameCount * 5);
   imageMode(CENTER);
   tint(250)
-  image(img4, 0, 0, img4.width / 4, img4.height / 4);
+  image(img4, 0, 0, img4.width/4*(width*0.002), img4.height / 4*(width*0.002));
   pop();
   
   push();
-  translate(x + 100, height - 100);
+  translate(width/5, height-height/6);
   rotate(frameCount * 5);
   imageMode(CENTER);
   tint(230,68,72,80)
-  image(img4, 0, 0, img4.width / 5, img4.height / 5);
+  image(img4, 0, 0, img4.width / 5*(width*0.002), img4.height / 5*(width*0.002));
   pop();
 
   push();
-  translate(x + 100, height - 100);
+  translate(width/5, height-height/6);
   rotate(-frameCount * 6);
   imageMode(CENTER);
   tint(230,68,72,80)
-  image(img4, 0, 0, img4.width / 7, img4.height / 7);
+  image(img4, 0, 0, img4.width / 7*(width*0.002), img4.height / 7*(width*0.002));
   pop();
 
   push();
-  translate(x + 100, height - 100);
+  translate(width/5, height-height/6);
   rotate(frameCount * 6);
   imageMode(CENTER);
   tint(29,32,136,80)
-  image(img4, 0, 0, img4.width / 10, img4.height / 10);
+  image(img4, 0, 0, img4.width / 10*(width*0.002), img4.height / 10*(width*0.002));
   pop();
 }
 
