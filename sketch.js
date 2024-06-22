@@ -76,6 +76,7 @@ function draw() {
   textFont(font1);
   fill("white");
   noStroke();
+  //text(testo, text_x, text_y);
 
   let text_width = textWidth(testo)
   
