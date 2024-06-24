@@ -58,7 +58,7 @@ function draw() {
    // 上方变色LOGO
   // LOGO
   push();
-  tint(255,255*mic.getLevel()*300,255*mic.getLevel()*300);
+  tint(255,255*mic.getLevel()*50,255*mic.getLevel()*60);
   imageMode(CORNER);
   image(img1, 10, 10, img1.width / 5, img1.height / 5);
   pop();
