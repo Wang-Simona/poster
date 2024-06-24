@@ -137,8 +137,7 @@ function draw() {
 
   // 旋转花花
   // fiore
-  let x = 0;
-  let y = height;
+  
   
   push();
   translate(width/5, height-height/6);
