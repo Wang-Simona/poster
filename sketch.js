@@ -58,7 +58,7 @@ function draw() {
    // 上方变色LOGO
   // LOGO
   push();
-  tint(255,255*mic.getLevel()*50,255*mic.getLevel()*100);
+  tint(255,255*mic.getLevel()*20,255*mic.getLevel()*50);
   imageMode(CORNER);
   image(img1, 10, 10, img1.width / 5, img1.height / 5);
   pop();
@@ -103,6 +103,7 @@ function draw() {
   endShape();
   pop()
  
+
   // 信息
   // informazioni sotto
   let texts_x = width-150;
@@ -137,8 +138,7 @@ function draw() {
 
   // 旋转花花
   // fiore
-  
-  
+
   push();
   translate(width/5, height-height/6);
   rotate(-frameCount * 5);
