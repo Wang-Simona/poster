@@ -5,7 +5,7 @@ let font2;
 let img2;
 let img3;
 let img4;
-
+//测试
 function preload() {
   img = loadImage("LIMES.png");
   img1 = loadImage("LOGO 1.png");
