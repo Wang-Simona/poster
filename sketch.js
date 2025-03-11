@@ -18,7 +18,7 @@ function preload() {
 
 let mic;
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1500,900);
   mic = new p5.AudioIn();  
   mic.start();
   rectMode(CENTER);
@@ -173,5 +173,5 @@ function draw() {
 }
 
 function windowResized() {
-resizeCanvas(windowWidth, windowHeight);
+resizeCanvas(1500,900);
 }
