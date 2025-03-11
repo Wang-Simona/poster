@@ -180,4 +180,4 @@ resizeCanvas(1500,900);
 //function mouseClicked(){save ("image.png")}
 
 //截图动图
-function mousePressed() {saveGif('myAnimation', 3);}
+//function mousePressed() {saveGif('myAnimation', 3)}
