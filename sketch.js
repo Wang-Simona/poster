@@ -175,3 +175,9 @@ function draw() {
 function windowResized() {
 resizeCanvas(1500,900);
 }
+
+//截图
+//function mouseClicked(){save ("image.png")}
+
+//截图动图
+function mousePressed() {saveGif('myAnimation', 3);}
