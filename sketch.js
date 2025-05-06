@@ -181,3 +181,6 @@ resizeCanvas(windowWidth,windowHeight);
 
 //截图动图
 //function mousePressed() {saveGif('myAnimation', 3)}
+//function mouseClicked() {
+  saveGif("mySketch", 5);
+}
